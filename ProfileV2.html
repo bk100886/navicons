@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Урок 2 - персональные данные (validatejs).</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src="js/common/validate.min.js"></script>
+    <script src="js/common/common.js"></script>
+    <script src="js/common/messages.js"></script>
+    <script src="js/common/executor.js"></script>
+    <script src="js/common/css-names.js"></script>
+    <script src="js/common/html-elem-names.js"></script>
+    <script src="js/common/event.js"></script>
+    <script src='js/profile-v2.js'></script>
+</head>
+<body>
+    <form id="profileForm" class="mx-auto m-3 needs-validation" novalidate>
+        <div class="card mb-3">
+            <div class="card-header text-center text-info font-weight-normal h5">
+                Персональные данные
+            </div>
+            <div class="card-body bg-neutral">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="fname" name="fname" placeholder="Имя" autocomplete="off">        
+                    <div class="invalid-tooltip">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="lname" name="lname" placeholder="Фамилия" autocomplete="off">
+                    <div class="invalid-tooltip">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="city" name="city">
+                        <option value="" selected disabled>Выберите город</option>
+                    </select>
+                    <div class="invalid-tooltip">
+                    </div>
+                </div>
+                <div class="form-group mb-0">
+                    <label class="text-muted">Дата рождения</label>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <select class="form-control" id="birthDay" name="birthDay">
+                            <option value="" selected disabled>Число</option>
+                        </select>
+                    </div>
+                    <div class="form-group col">
+                        <select class="form-control" id="birthMonth" name="birthMonth">
+                            <option value="" selected disabled>Месяц</option>
+                        </select>
+                    </div>
+                    <div class="form-group col">
+                        <select class="form-control" id="birthYear" name="birthYear">
+                            <option value="" selected disabled>Год</option>
+                        </select>
+                    </div>
+                </div>
+                <button id="save" type="submit" class="btn btn-primary form-control">Сохранить</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

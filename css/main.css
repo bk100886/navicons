@@ -1,0 +1,22 @@
+/*Так не съезжает бутстраповский тултип*/
+.invalid-tooltip{
+    top: inherit;
+}
+/*Ошибка на странице*/
+.pageError{
+    max-width: 650px;
+}
+/*Убираю нижний маржинг и текст выравниваю по ширине*/
+.alert > ol{
+    margin-bottom: 0;
+    text-align: justify;
+}
+/*Нейтральный цвет фона*/
+.bg-neutral{
+    background-color: rgba(0, 0, 0, 0.03);
+    color: rgba(0, 0, 0, 0.03);
+}
+/*Форма персональных данных пользователя*/
+#profileForm {
+    max-width: 350px;
+}
